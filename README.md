@@ -1,73 +1,117 @@
-# Noble Password Manager
+<p align="center">
+  <img src="docs/images/app_icon.png" width="120" alt="Noble Password Manager">
+</p>
 
-Noble Password Manager (NPM) is a Offine local Windows password manager designed to keep credential data in an encrypted vault stored on the user's computer.
+<h1 align="center">Noble Password Manager</h1>
+
+<p align="center">
+  A local Windows password manager designed to store and manage credentials
+  in an encrypted vault on the user's computer.
+</p>
+
+<p align="center">
+  <strong>Version 0.0.4 Beta</strong>
+</p>
+
+<p align="center">
+  <a href="../../releases/latest">Download</a>
+  &nbsp;•&nbsp;
+  <a href="#features">Features</a>
+  &nbsp;•&nbsp;
+  <a href="#security">Security</a>
+  &nbsp;•&nbsp;
+  <a href="../../issues">Issues</a>
+</p>
+
+---
+
+## About
+
+**Noble Password Manager (NPM)** is a local Windows password manager focused on storing credential data in an encrypted vault on the user's computer.
+
+The project is **closed-source**. This public repository contains project documentation, release information, and downloadable binaries. The application source code is maintained separately.
 
 > **Status:** Beta — `v0.0.4`
->
-> This project is closed-source. The public repository contains release information and downloadable binaries; the application source code is maintained separately in a private repository.
+
+---
 
 ## Download
 
-[Download the latest release]
+### Noble Password Manager v0.0.4 Beta
 
-For a beta release, download the installer unless you specifically need the portable package.
+Download the latest official release from GitHub:
 
-## Current release
+**[Download the latest release](../../releases/latest)**
 
-### v0.0.4 Beta
+Available packages:
 
-- Fixed application path/resource handling for installed builds.
-- Added additional interface themes.
-- Fixed minor bugs and UI glitches.
+- **Setup** — Recommended for normal installation.
+- **Portable** — Run the application without a traditional installation.
 
-See [CHANGELOG.md](CHANGELOG.md) for release notes.
+> **Beta software:** This release is intended for testing and feedback.
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img
+    src="docs/images/first-window-of-app.png"
+    width="48%"
+    alt="Noble Password Manager first main window"
+  />
+  <img
+    src="docs/images/second-window-of-app.png"
+    width="48%"
+    alt="Noble Password Manager second main window"
+  />
+</p>
+
+---
 
 ## Features
 
 - Local encrypted password vault
-- Master-password unlock
+- Master-password protection
 - Password generator
 - Password-strength indicator
 - Categories and favorites
 - Search
-- Encrypted vault backup/export
-- Encrypted vault import
+- Password visibility controls
+- Encrypted vault backup and export
+- Encrypted vault import and restore
 - Master-password change
 - Automatic inactivity lock
 - English and Farsi interface
 - Multiple appearance themes
 
+---
+
 ## Security
 
-Noble Password Manager currently uses **Fernet** authenticated encryption and **PBKDF2-HMAC-SHA256 with 600,000 iterations** to derive a 32-byte Fernet key from the master password. A random 16-byte salt is stored with each vault file; the salt is not a secret.
+Noble Password Manager currently uses the following cryptographic design:
 
-The cryptographic design is documented in [docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md).
+| Component | Implementation |
+|---|---|
+| Authenticated encryption | **Fernet** |
+| Key derivation | **PBKDF2-HMAC-SHA256** |
+| PBKDF2 iterations | **600,000** |
+| Derived key length | **32 bytes** |
+| Vault salt | **16-byte random salt** |
 
-**Important:** this beta has not undergone an independent professional security audit. A password manager should be treated as security-sensitive software, and users should keep independent backups of important encrypted vaults.
+The master password is used to derive the encryption key for the vault. A random salt is stored alongside the encrypted vault data; the salt itself is not secret.
+
+For more information, see the [Security Model](docs/SECURITY_MODEL.md).
+
+> **Security notice:** Noble Password Manager v0.0.4 Beta has not undergone an independent professional security audit. The application should therefore be treated as security-sensitive beta software.
+
+Users should maintain independent backups of important encrypted vaults.
+
+---
 
 ## Storage
 
-On Windows, the application stores its vault and configuration under the user's `%APPDATA%` directory:
+On Windows, Noble Password Manager stores its application data under:
 
 ```text
 %APPDATA%\NoblePasswordManager\
-```
-
-The encrypted vault file is:
-
-```text
-noble_vault.enc
-```
-
-## License
-
-Noble Password Manager is proprietary software. See [LICENSE.txt](LICENSE.txt).
-
-## Security reports
-
-Please do **not** report security vulnerabilities in public Issues or Discussions. See [SECURITY.md](SECURITY.md) for the reporting process.
-
-## Disclaimer
-
-Noble Password Manager is provided as beta software. Use it at your own risk and maintain independent backups of your encrypted vault.
-
