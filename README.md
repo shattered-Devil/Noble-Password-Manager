@@ -29,7 +29,7 @@
 
 **Noble Password Manager (NPM)** is a local Windows password manager focused on storing credential data in an encrypted vault on the user's computer.
 
-The project is **closed-source**. This public repository contains project documentation, release information, and downloadable binaries. The application source code is maintained separately.
+The project is **open-source**. This public repository contains project documentation, release information, and downloadable binaries. The application source code is maintained separately.
 
 > **Status:** Beta — `v0.0.4`
 
