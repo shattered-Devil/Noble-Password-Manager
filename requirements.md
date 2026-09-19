@@ -34,11 +34,7 @@ Replace the path below if your project is stored somewhere else.
 
 Copy and paste:
 
-```cmd
-cd "C:\Users\wwwni\Desktop\under develoment\password manager ( python tkinter )\Gemini versions\0.0.4\0.0.4"
-```
-
-Check the current directory:
+Check the current directory of source code :
 
 ```cmd
 cd
@@ -84,19 +80,7 @@ python -m pip install --upgrade pip
 
 ---
 
-## 5. Install Noble Password Manager Dependencies
-
-Make sure `NoblePasswordManager_requirements.txt` is in the current folder.
-
-Then run:
-
-```cmd
-python -m pip install -r NoblePasswordManager_requirements.txt
-```
-
----
-
-## 6. Check for Broken Dependencies
+## 5. Check for Broken Dependencies
 
 Run:
 
@@ -114,7 +98,7 @@ If pip reports dependency conflicts, resolve them before building the applicatio
 
 ---
 
-## 7. Check Nuitka
+## 6. Check Nuitka
 
 Run:
 
@@ -130,7 +114,7 @@ The requirements file specifies:
 
 ---
 
-## 8. Check Tkinter
+## 7. Check Tkinter
 
 Tkinter is part of the standard Windows Python installation and is not installed through the requirements file.
 
@@ -148,7 +132,7 @@ Tkinter: OK
 
 ---
 
-## 9. Check All Python Dependencies
+## 8. Check All Python Dependencies
 
 Copy and paste this complete command:
 
@@ -170,7 +154,7 @@ Nuitka: OK
 
 ---
 
-## 10. Run the Python Source Directly
+## 9. Run the Python Source Directly
 
 Before compiling, test the source itself.
 
@@ -184,7 +168,7 @@ If the filename contains spaces, keep the quotation marks.
 
 ---
 
-## 11. Verify the Source Compiles
+## 10. Verify the Source Compiles
 
 Run:
 
@@ -196,7 +180,7 @@ If there is no output and CMD returns to the prompt, the Python source passed th
 
 ---
 
-## 12. Check Installed Package Versions
+## 11. Check Installed Package Versions
 
 You can inspect the installed packages with:
 
@@ -217,7 +201,7 @@ python -m pip list
 
 ---
 
-## 13. One-Command Environment Check
+## 12. One-Command Environment Check
 
 After installation, this command performs the main checks in one sequence:
 
@@ -229,7 +213,7 @@ If that completes without errors, the main Python dependency environment is read
 
 ---
 
-## 14. Optional: Create a Virtual Environment
+## 13. Optional: Create a Virtual Environment
 
 Using a virtual environment is recommended for development and build isolation.
 
@@ -272,7 +256,7 @@ deactivate
 
 ---
 
-## 15. Recommended Build Preparation Sequence
+## 14. Recommended Build Preparation Sequence
 
 Copy and paste the following commands one by one:
 
@@ -326,7 +310,7 @@ python "Noble_password_manager_0.0.4.py"
 
 ---
 
-## 16. Important Notes
+## 15. Important Notes
 
 ### Tkinter
 
@@ -367,7 +351,7 @@ A previous Nuitka compilation environment for this project recorded Python 3.14.
 
 ---
 
-## 17. Basic Troubleshooting
+## 16. Basic Troubleshooting
 
 ### `python is not recognized`
 
@@ -449,7 +433,7 @@ python -c "import tkinter, customtkinter, cryptography, PIL, arabic_reshaper; fr
 
 ---
 
-## 18. Final Environment Verification
+## 17. Final Environment Verification
 
 Before building a release, all of the following should work:
 
