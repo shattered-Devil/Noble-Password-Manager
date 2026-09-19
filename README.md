@@ -128,5 +128,4 @@ For a detailed breakdown of dependencies, versions, and package details, please 
 ### 1. Clone the Repository
 Open your Command Prompt (`cmd`) or Terminal and run:
 ```cmd
-git clone [https://github.com/shattered-Devil/Noble-Password-Manager.git](https://github.com/shattered-Devil/Noble-Password-Manager.git)
-cd Noble-Password-Manager
+git clone https://github.com/shattered-Devil/Noble-Password-Manager.git
