@@ -1,6 +1,6 @@
 # Noble Password Manager
 
-**Noble Password Manager (NPM) is a Offine local Windows password manager designed to keep credential data in an encrypted vault stored on the user's computer.
+Noble Password Manager (NPM) is a Offine local Windows password manager designed to keep credential data in an encrypted vault stored on the user's computer.
 
 > **Status:** Beta — `v0.0.4`
 >
