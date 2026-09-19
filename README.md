@@ -25,7 +25,7 @@
 
 ---
 
-## About
+## 📢 About
 
 **Noble Password Manager (NPM)** is a local Windows password manager focused on storing credential data in an encrypted vault on the user's computer.
 
@@ -35,7 +35,7 @@ The project is **closed-source**. This public repository contains project docume
 
 ---
 
-## Download
+## 🔓 Download
 
 ### Noble Password Manager v0.0.4 Beta
 
@@ -52,7 +52,7 @@ Available packages:
 
 ---
 
-## Screenshots
+## 🖼️ Screenshots
 
 <p align="center">
   <img
@@ -69,7 +69,7 @@ Available packages:
 
 ---
 
-## Features
+## ✨ Features
 
 - Local encrypted password vault
 - Master-password protection
@@ -87,7 +87,7 @@ Available packages:
 
 ---
 
-## Security
+## 🛡️ Security
 
 Noble Password Manager currently uses the following cryptographic design:
 
@@ -109,9 +109,24 @@ Users should maintain independent backups of important encrypted vaults.
 
 ---
 
-## Storage
+## 💽 Storage
 
 On Windows, Noble Password Manager stores its application data under:
 
 ```text
 %APPDATA%\NoblePasswordManager\
+
+```
+
+## 🚀 Installation & Requirements
+
+For a detailed breakdown of dependencies, versions, and package details, please check [requirements.md](requirements.md).
+
+### Prerequisites
+* Python 3.9 or higher
+
+### 1. Clone the Repository
+Open your Command Prompt (`cmd`) or Terminal and run:
+```cmd
+git clone [https://github.com/shattered-Devil/Noble-Password-Manager.git](https://github.com/shattered-Devil/Noble-Password-Manager.git)
+cd Noble-Password-Manager
